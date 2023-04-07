@@ -6280,19 +6280,6 @@ otapackage: $(INTERNAL_OTA_PACKAGE_TARGET)
 bacon: otapackage
 	$(hide) ln -f $(INTERNAL_OTA_PACKAGE_TARGET) $(LEGION_TARGET_PACKAGE)
 	$(hide) $(MD5SUM) $(LEGION_TARGET_PACKAGE) > $(LEGION_TARGET_PACKAGE).md5sum
-	@echo -e "**************************************************************"
-	@echo -e "eee....eeeeee..eeeeee..eee..eeeeee..eeeeeee...eeeeee...eeeeee."
-	@echo -e "@@@::::@@@@@@:@@@@@@@@:@@@:@@@@@@@@:@@@@@@@@:@@@@@@@@:@@@@@@@:"
-	@echo -e "%%%----%%%----%%%------%%%-%%%--%%%-%%%--%%%-%%%--%%%-%%%-----"
-	@echo -e "&&&++++&&&&&++&&&++++++&&&+&&&++&&&+&&&++&&&+&&&++&&&+&&&&&&++"
-	@echo -e "|||****|||||**|||*||||*|||*|||**|||*|||**|||*|||**|||**||||||*"
-	@echo -e "!!!====!!!====!!!==!!!=!!!=!!!==!!!=!!!==!!!=!!!==!!!=====!!!="
-	@echo -e "::::::#::::::#::::::::#:::#::::::::#:::##:::#::::::::#:::::::#"
-	@echo -e "......@......@@......@@...@@......@@...@@...@@......@@......@@"
-	@echo -e "                                                              "
-	@echo -e "=========================Package Complete====================="
-	@echo -e "                       LegionOS by RajKale99                  "
-	@echo -e "**************************************************************"
 	@echo "**Package completed"**: $(LEGION_TARGET_PACKAGE)"
 
 ifeq ($(BOARD_BUILD_RETROFIT_DYNAMIC_PARTITIONS_OTA_PACKAGE),true)
